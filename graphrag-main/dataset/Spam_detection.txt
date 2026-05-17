@@ -1,0 +1,228 @@
+# Spam detection
+
+Various anti-spam techniques are used to prevent email spam (unsolicited bulk email).
+
+No technique is a complete solution to the spam problem, and each has trade-offs between incorrectly rejecting legitimate email (false positives) as opposed to not rejecting all spam email (false negatives) – and the associated costs in time, effort, and cost of wrongfully obstructing good mail. This leads to combinations of the many techniques in order to achieve the best protection against spam and the potential harms that may come with it, while keeping the emails that should be seen intact.
+Anti-spam techniques can be broken into four broad categories: those that require actions by individuals (end-user techniques), those that can be automated by email administrators, those that can be automated by email senders and those employed by researchers and law enforcement officials. They are often used in conjunction with one another.
+
+End-user techniques
+There are a number of techniques that individuals can use to restrict the availability of their email addresses, with the goal of reducing their chance of receiving spam.
+
+Discretion
+Sharing an email address only among a limited group of correspondents is one way to limit the chance that the address will be "harvested" and targeted to receive spam. Similarly, when forwarding messages to a number of recipients who do not know one another, recipient addresses can be put in the bcc: field so that each recipient does not get a list of the other recipients' email addresses.
+When identifying spam, the email of the sender might be slightly off from that of an official company. Winning competitions and rewards, job offers, and anything revolving around the banking world are among the top spam subjects. Writing might lack professionalism and correct grammar. Artificial intelligence can be used to create the messages and may have an automated or robotic style of language. It has been found in the modern day that over half of the spam emails sent involve artificial intelligence in some form. Besides creating the spam message entirely, AI may also be used to revise writings of errors, making them appear more authentic. As time goes on, it is very possible that the AI can become harder to detect and employ other methods that makes spam more likely to make it to recipients' inboxes and successfully deceive readers. As it stands currently, out of the most-used email service providers, Yahoo has best been able to prevent AI-generated spam from penetrating through their integrated security systems. In contrast, Gmail and Outlook had allowed more from a set of the same emails to go through their spam detectors.
+
+Address munging
+Email addresses posted on webpages, Usenet or chat rooms are vulnerable to e-mail address harvesting. Address munging is the practice of disguising an e-mail address to prevent it from being automatically collected in this way, but still allow a human reader to reconstruct the original: an email address such as, "no-one@example.com", might be written as "no-one at example dot com", for instance. A related technique is to display all or part of the email address as an image, or as jumbled text with the order of characters restored using CSS.
+
+Avoid responding to spam
+A common piece of advice is not to reply to spam messages as spammers may simply regard responses as confirmation that an email address is valid. Disabling read receipts can help too, as even opening spam could signal activity. Similarly, many spam messages contain web links or addresses which the user is directed to follow to be removed from the spammer's mailing list – and these should be treated as dangerous. Even deleting a spam email can confirm validity and activity of the account. In any case, sender addresses are often forged in spam messages, so that responding to spam may result in failed deliveries – or may reach completely innocent third parties. Some phishing campaigns use professional networking platforms such as LinkedIn to gather personal and employment details, enabling attackers to craft convincing messages that appear to come from coworkers, recruiters, or human resources departments. These impostors acting as job recruiters can lead to scams, extorting money or personal information. Interacting with such phishing attempts – including clicking links to "unsubscribe" or "verify details" – can confirm address validity to attackers and expose users to credential theft or malware. Even successful removal of subscriptions has meager results at best, and it is overall more likely to cause further issues rather than resolving any. These highly targeted, social engineering-style phishing messages are often based on publicly visible LinkedIn information and can bypass traditional spam filters, making user vigilance especially critical. Calling the customer service of the supposed sender trying to gather this information and investigate the email's legitimacy if it is real should be through contact information on the ostensible sender's official website or somewhere else that is verifiable, as a number within the email may connect to the spammers or their associates.
+
+Contact forms
+Businesses and individuals sometimes avoid publicizing an email address by asking for contact to come via a "contact form" on a webpage – which then typically forwards the information via email. Such forms, however, are sometimes inconvenient to users, as they are not able to use their preferred email client, risk entering a faulty reply address, and are typically not notified about delivery problems. Further, contact forms have the drawback that they require a website with the appropriate technology.
+In some cases contact forms also send the message to the email address given by the user. This allows the contact form to be used for sending spam, which may incur email deliverability problems from the site once the spam is reported and the sending IP is blacklisted.
+
+Disable HTML in email
+Many modern mail programs incorporate web browser functionality, such as the display of HTML, URLs, and images.
+Avoiding or disabling this feature does not help avoid spam. It may, however, be useful to avoid some problems if a user opens a spam message: offensive images, obfuscated hyperlinks, being tracked by web bugs,  being targeted by JavaScript or attacks upon security vulnerabilities in the HTML renderer. Mail clients which do not automatically download and display HTML, images or attachments have fewer risks, as do clients who have been configured to not display these by default.
+
+Disposable email addresses
+An email user may sometimes need to give an address to a site without complete assurance that the site owner will not use it for sending spam. One way to mitigate the risk is to provide a disposable email address — an address which the user can disable or abandon which forwards email to a real account. A number of services provide disposable address forwarding. Addresses can be manually disabled, can expire after a given time interval, or can expire after a certain number of messages have been forwarded.
+Disposable email addresses can be used by users to track whether a site owner has disclosed an address, or had a security breach.
+
+Ham passwords
+Systems that use "ham passwords" ask unrecognized senders to include in their email a password that demonstrates that the email message is a "ham" (not spam) message. Typically the email address and ham password would be described on a web page, and the ham password would be included in the subject line of an email message (or appended to the "username" part of the email address using the "plus addressing" technique). Ham passwords are often combined with filtering systems which let through only those messages that have identified themselves as "ham".
+
+Avoid sites that share to third parties
+Certain sites may have a financial incentive to spread email addresses to third parties, who then can send spam. To avoid this, a user can read the privacy policy when using a site for the first time; the site owner must explain what can and cannot be done with a user's email address. A social media platform may grant other companies licenses to use personal information of the platform's users, such as email addresses. Platforms of this nature typically have privacy policies.
+
+Up-to-date software
+Timely updating software provides better protection against cybercriminal activity, including viruses and malware. This can prevent spammers from getting an email to begin with, along with safeguarding devices from the malicious files that may accidentally be installed from spam mail.
+
+Reporting spam
+Tracking down a spammer's ISP and reporting the offense can lead to the spammer's service being terminated and criminal prosecution. Some online tools such as SpamCop and Network Abuse Clearinghouse are potentially helpful but not always accurate. Historically, such reports have not played a large part in abating spam, since the spammers generally move their operation to another URL, ISP or network of IP addresses.
+In many countries consumers may also report unwanted and deceptive commercial email to government agencies. In the US, the Federal Trade Commission (FTC), an agency of the Department of Commerce, has taken action against spammers. Similar agencies exist in other countries.
+
+Automated techniques for email administrators
+There are now a large number of applications, appliances, services, and software systems that email administrators can use to reduce the load of spam on their systems and mailboxes. In general, these attempt to reject (or "block") the majority of spam email outright at the SMTP connection stage. If they do accept a message, they will typically then analyze the content further and may decide to  "quarantine" any categorized as spam.
+
+Authentication
+A number of systems have been developed that allow domain name owners to identify email as authorized. Many of these systems use the DNS to list sites authorized to send email on their behalf. After many other proposals, SPF, DKIM and DMARC are all now widely supported with growing adoption. While not directly attacking spam, these systems make it much harder to spoof addresses, a common technique of spammers also used in phishing and other types of fraud via email. Using any combination of these will help prevent emails from being mislabeled as spam or junk.
+
+Challenge/response systems
+A method which may be used by internet service providers, by specialized services or enterprises to combat spam is to require unknown senders to pass various tests before their messages are delivered. These strategies are termed "challenge/response systems".
+
+Checksum-based filtering
+Checksum-based filter exploits the fact that the messages are sent in bulk, that is that they will be identical with small variations. Checksum-based filters strip out everything that might vary between messages, reduce what remains to a checksum, and look that checksum up in a database such as the  Distributed Checksum Clearinghouse which collects the checksums of messages that email recipients consider to be spam (some people have a button on their email client which they can click to nominate a message as being spam); if the checksum is in the database, the message is likely to be spam. To avoid being detected in this way, spammers will sometimes insert unique invisible gibberish known as hashbusters into the middle of each of their messages, to make each message have a unique checksum.
+
+Country-based filtering
+Some email servers expect to never communicate with particular countries from which they receive a great deal of spam.  Therefore, they use country-based filtering – a technique that blocks email from certain countries.  This technique is based on country of origin determined by the sender's IP address rather than any trait of the sender. This can of course be bypassed by services that can displace a sender's IP, such as a VPN.
+
+DNS-based blacklists
+There are large number of free and commercial DNS-based Blacklists, or DNSBLs which allow a mail server to quickly look up the IP of an incoming mail connection - and reject it if it is listed there. Administrators can choose from scores of DNSBLs, each of which reflects different policies: some list sites known to emit spam; others list open mail relays or proxies; others list ISPs known to support spam. This method can unfortunately result in false positives, potentially blocking real mail if a blacklisted IP is linked with spammers is also shared by authentic users. Virtual private networks and other methods of fronting with a false IP address can allow spammers to get around these established blacklists.
+
+Blackhole Lists
+Essentially a DNS-based blacklist that is set up and kept by a third-party. These lists tend to be updated frequently, and can be comparable in efficiency to in-house blacklists. Naturally, this comes with the same downsides of possible false positives and being relatively easy to get around by spammers.
+
+Whitelists
+The polar opposite of a blacklist, permits mail from chosen users and sources only. This is incredibly restrictive in who is able to send messages, but is very effective. There are what are known as automatic whitelists that will mark senders as clear if they do not have any history of distributing spam mail, this can be much more reasonable to use rather than a standard whitelist.
+
+Greylists
+Greylists work in a way that is very similar to that of whitelists. It will deny any email that is being sent from an unapproved account, and will then display a sign to the sender that this occurred. If another attempt is made to send an email it will go through and the sender will be added to the list (at this point functioning exactly like a whitelist, as they can now send mail whenever). While most real users will attempt to send out the email again, many spam systems only send out messages once. This results in spam mail not being received.
+
+URL filtering
+Most spam/phishing messages contain an URL that they entice victims into clicking on.  Thus, a popular technique since the early 2000s consists of extracting URLs from messages and looking them up in databases such as Spamhaus' Domain Block List (DBL), SURBL, and URIBL.
+
+Strict enforcement of RFC standards
+Many spammers use poorly written software or are unable to comply with the standards because they do not have legitimate control of the computer they are using to send spam (zombie computer).  By setting tighter limits on the deviation from RFC standards that the MTA will accept, a mail administrator can reduce spam significantly - but this also runs the risk of rejecting mail from older or poorly written or configured servers.
+Greeting delay – A sending server is required to wait until it has received the SMTP greeting banner before it sends any data. A deliberate pause can be introduced by receiving servers to allow them to detect and deny any spam-sending applications that do not wait to receive this banner.
+Temporary rejection – The greylisting technique is built on the fact that the SMTP protocol allows for temporary rejection of incoming messages. Greylisting temporarily rejects all messages from unknown senders or mail servers – using the standard 4xx error codes. All compliant MTAs will proceed to retry delivery later, but many spammers and spambots will not. The downside is that all legitimate messages from first-time senders will experience a delay in delivery.
+HELO/EHLO checking – RFC 5321 says that an SMTP server "MAY verify that the domain name argument in the EHLO command actually corresponds to the IP address of the client. However, if the verification fails, the server MUST NOT refuse to accept a message on that basis." Systems can, however, be configured to 
+
+Refuse connections from hosts that give an invalid HELO – for example, a HELO that is not an FQDN or is an IP address not surrounded by square brackets.
+Refusing connections from hosts that give an obviously fraudulent HELO
+Refusing to accept email whose HELO/EHLO argument does not resolve in DNS
+Invalid pipelining – Several SMTP commands are allowed to be placed in one network packet and "pipelined".  For example, if an email is sent with a CC: header, several SMTP "RCPT TO" commands might be placed in a single packet instead of one packet per "RCPT TO" command.  The SMTP protocol, however, requires that errors be checked and everything is synchronized at certain points.  Many spammers will send everything in a single packet since they do not care about errors and it is more efficient.  Some MTAs will detect this invalid pipelining and reject email sent this way.
+Nolisting – The email servers for any given domain are specified in a prioritized list, via the MX records. The nolisting technique is simply the adding of an MX record pointing to a non-existent server as the "primary" (i.e. that with the lowest preference value) – which means that an initial mail contact will always fail. Many spam sources do not retry on failure, so the spammer will move on to the next victim; legitimate email servers should retry the next higher numbered MX, and normal email will be delivered with only a brief delay.
+Quit detection – An SMTP connection should always be closed with a QUIT command. Many spammers skip this step because their spam has already been sent and taking the time to properly close the connection takes time and bandwidth. Some MTAs are capable of detecting whether or not the connection is closed correctly and use this as a measure of how trustworthy the other system is.
+
+Honeypots
+Another approach is simply creating an imitation MTA that gives the appearance of being an open mail relay, or an imitation TCP/IP proxy server that gives the appearance of being an open proxy. Spammers who probe systems for open relays and proxies will find such a host and attempt to send mail through it, wasting their time and resources, and potentially, revealing information about themselves and the origin of the spam they are sending to the entity that operates the honeypot. Such a system may simply discard the spam attempts, submit them to DNSBLs, or store them for analysis by the entity operating the honeypot that may enable identification of the spammer for blocking.
+
+Hybrid filtering
+SpamAssassin, Rspamd, Policyd-weight and others use some or all of the various tests for spam, and assign a numerical score to each test.  Each message is scanned for these patterns, and the applicable scores tallied up. If the total is above a fixed value, the message is rejected or flagged as spam. By ensuring that no single spam test by itself can flag a message as spam, the false positive rate can be greatly reduced.
+
+Outbound spam protection
+Outbound spam protection involves scanning email traffic as it exits a network, identifying spam messages and then taking an action such as blocking the message or shutting off the source of the traffic. While the primary impact of spam is on spam recipients, sending networks also experience financial costs, such as wasted bandwidth, and the risk of having their IP addresses blocked by receiving networks.
+Outbound spam protection not only stops spam, but also lets system administrators track down spam sources on their network and remediate them – for example, clearing malware from machines which have become infected with a virus or are participating in a botnet.
+
+PTR/reverse DNS checks
+The PTR DNS records in the reverse DNS can be used for a number of things, including:
+
+Most email mail transfer agents (mail servers) use a forward-confirmed reverse DNS (FCrDNS) verification and if there is a valid domain name, put it into the "Received:" trace header field.
+Some email mail transfer agents will perform FCrDNS verification on the domain name given in the SMTP HELO and EHLO commands. See #Strict enforcement of RFC standards § HELO/EHLO .
+To check the domain names in the rDNS to see if they are likely from dial-up users, dynamically assigned addresses, or home-based broadband customers.  Since the vast majority of email that originates from these computers is spam, many mail servers also refuse email with missing or "generic" rDNS names.
+A Forward Confirmed reverse DNS verification can create a form of authentication that there is a valid relationship between the owner of a domain name and the owner of the network that has been given an IP address.  While reliant on the DNS infrastructure, which has known vulnerabilities, this authentication is strong enough that it can be used for whitelisting purposes because spammers and phishers cannot usually bypass this verification when they use zombie computers to forge the domains.
+
+Rule-based filtering
+Content filtering techniques rely on the specification of lists of words or regular expressions disallowed in mail messages. Thus, if a site receives spam advertising "herbal Viagra", the administrator might place this phrase in the filter configuration. The mail server would then reject any message containing the phrase. This could lead to real accounts being blocked from emailing mistakenly if the words or phrases that are restricted are fairly common. Also, it is important to note that many spammers may purposefully misspell words to get around this, along with some having different native languages that could result in spelling errors. This leads to alternative spellings of blocked words to also be added to the list in order to better defend against spam.
+Heuristic filters can take this further and attribute points to certain words or phrases much like the standard rule-based filtering. These phrases can be worth more points than others, and when added will determine whether or not it is spam based on a threshold that is put into place. Depending on how low it is, this can lead to false positives.
+Header filtering looks at the header of the email which contains information about the origin, destination and content of the message. Although spammers will often spoof fields in the header in order to hide their identity, or to try to make the email look more legitimate than it is, many of these spoofing methods can be detected, and any violation of, e.g., RFC 5322, 7208, standards on how the header is to be formed can also serve as a basis for rejecting the message.
+
+SMTP callback verification
+Since a large percentage of spam has forged and invalid sender ("from") addresses, some spam can be detected by checking that this "from" address is valid.  A mail server can try to verify the sender address by making an SMTP connection back to the mail exchanger for the address, as if it were creating a bounce, but stopping just before any email is sent.
+
+Callback verification has various drawbacks:  (1) Since nearly all spam has forged return addresses, nearly all callbacks are to innocent third party mail servers that are unrelated to the spam; (2) When the spammer uses a trap address as his sender's address. If the receiving MTA tries to make the callback using the trap address in a MAIL FROM command, the receiving MTA's IP address will be blacklisted; (3) Finally, the standard VRFY and EXPN commands used to verify an address have been so exploited by spammers that few mail administrators enable them, leaving the receiving SMTP server no effective way to validate the sender's email address.
+
+SMTP proxy
+SMTP proxies allow combating spam in real time, combining sender's behavior controls, providing legitimate users immediate feedback, eliminating a need for quarantine.
+
+Spamtrapping
+Spamtrapping is the seeding of an email address so that spammers can find it, but normal users can not. If the email address is used then the sender must be a spammer and they are black listed.
+As an example, if the email address "spamtrap@example.org" is placed in the source HTML of a web site in a way that it isn't displayed on the web page, human visitors to the website would not see it. Spammers, on the other hand, use web page scrapers and bots to harvest email addresses from HTML source code - so they would find this address. When the spammer later sends to the address the spamtrap knows this is highly likely to be a spammer and can take appropriate action.
+
+Statistical content filtering
+Statistical, or Bayesian, filtering once set up requires no administrative maintenance per se: instead, users mark messages as spam or nonspam and the filtering software learns from these judgements. Thus, it is matched to the end user's needs, and as long as users consistently mark/tag the emails, can respond quickly to changes in spam content. Statistical filters typically also look at message headers, considering not just the content but also peculiarities of the transport mechanism of the email. In more recent times with the use of artificial intelligence and machine learning, these forms of filters have been able to go more in depth and overall improve upon their performance in combating against spam.
+Software programs that implement statistical filtering include Bogofilter, DSPAM, SpamBayes, ASSP, CRM114, the email programs Mozilla and Mozilla Thunderbird, Mailwasher, and later revisions of SpamAssassin.
+
+Tarpits
+A tarpit is any server software which intentionally responds extremely slowly to client commands. By running a tarpit which treats acceptable mail normally and known spam slowly or which appears to be an open mail relay, a site can slow down the rate at which spammers can inject messages into the mail facility. Depending on the server and internet speed, a tarpit can slow an attack by a factor of around 500. Many systems will simply disconnect if the server doesn't respond quickly, which will eliminate the spam.  However, a few legitimate email systems will also not deal correctly with these delays. The fundamental idea is to slow the attack so that the perpetrator has to waste time without any significant success.
+An organization can successfully deploy a tarpit if it is able to define the range of addresses, protocols, and ports for deception. The process involves a router passing the supported traffic to the appropriate server while those sent by other contacts are sent to the tarpit. Examples of tarpits include the Labrea tarpit, Honeyd, SMTP tarpits, and IP-level tarpits.
+
+Collateral damage
+Measures to protect against spam can cause collateral damage. This includes:
+
+The measures may consume resources, both in the server and on the network.
+When a mail server rejects legitimate messages, the sender needs to contact the recipient out of channel.
+When legitimate messages are relegated to a spam folder, the sender is not notified of this.
+If a recipient periodically checks his spam folder, that will cost him time and if there is a lot of spam it is easy to overlook the few legitimate messages.
+Measures that imposes costs on a third party server may be considered to be abuse and result in deliverability problems.
+
+Automated techniques for email senders
+There are a variety of techniques that email senders use to try to make sure that they do not send spam.  Failure to control the amount of spam sent, as judged by email receivers, can often cause even legitimate email to be blocked and for the sender to be put on DNSBLs.
+
+Background checks on new users and customers
+Since spammer's accounts are frequently disabled due to violations of abuse policies, they are constantly trying to create new accounts.  Due to the damage done to an ISP's reputation when it is the source of spam, many ISPs and web email providers use CAPTCHAs on new accounts to verify that it is a real human registering the account, and not an automated spamming system.  They can also verify that credit cards are not stolen before accepting new customers, check the Spamhaus Project ROKSO list, and do other background checks.
+
+Confirmed opt-in for mailing lists
+A malicious person can easily attempt to subscribe another user to a mailing list — to harass them, or to make the company or organisation appear to be spamming. To prevent this, all modern mailing list management programs (such as GNU Mailman, LISTSERV, Majordomo, and qmail's ezmlm) support "confirmed opt-in" by default. Whenever an email address is presented for subscription to the list, the software will send a confirmation message to that address. The confirmation message contains no advertising content, so it is not construed to be spam itself, and the address is not added to the live mail list unless the recipient responds to the confirmation message.
+
+Egress spam filtering
+Email senders typically now do the same type of anti-spam checks on email coming from their users and customers as for inward email coming from the rest of the Internet. This protects their reputation, which could otherwise be harmed in the case of infection by spam-sending malware.
+
+Limit email backscatter
+If a receiving server initially fully accepts an email, and only later determines that the message is spam or to a non-existent recipient, it will generate a bounce message back to the supposed sender. However, if (as is often the case with spam), the sender information on the incoming email was forged to be that of an unrelated third party then this bounce message is backscatter spam. For this reason it is generally preferable for most rejection of incoming email to happen during the SMTP connection stage, with a 5xx error code, while the sending server is still connected. In this case then the sending server will report the problem to the real sender cleanly.
+
+Port 25 blocking
+Firewalls and routers can be programmed to not allow SMTP traffic (TCP port 25) from machines on the network that are not supposed to run message transfer agents or send email.  This practice is somewhat controversial when ISPs block home users, especially if the ISPs do not allow the blocking to be turned off upon request.  Email can still be sent from these computers to designated smart hosts via port 25 and to other smart hosts via the email submission port 587.
+
+Port 25 interception
+Network address translation can be used to intercept all port 25 (SMTP) traffic and direct it to a mail server that enforces rate limiting and egress spam filtering.  This is commonly done in hotels, but it can cause email privacy problems, as well making it impossible to use STARTTLS and SMTP-AUTH if the port 587 submission port isn't used.
+
+Rate limiting
+Machines that suddenly start sending unusual quantities of email may have become zombie computers.  By limiting the rate that email can be sent around what is typical for the computer in question, legitimate email can still be sent, but large spam runs can be slowed down until manual investigation can be done.
+
+Spam report feedback loops
+By monitoring spam reports from sources such as SpamCop, AOL's feedback loop, Network Abuse Clearinghouse, the domain's abuse@ mailbox, and others, ISPs can often learn of problems before they seriously damage the ISP's reputation and the ISP's mail servers are blacklisted.
+
+FROM field control
+Both malicious software and human spam senders often use forged FROM addresses when sending spam messages. Control may be enforced on SMTP servers to ensure senders can only use their correct email address in the FROM field of outgoing messages. In an email users database each user has a record with an email address. The SMTP server must check if the email address in the FROM field of an outgoing message is the same address that belongs to the user's credentials, supplied for SMTP authentication. If the FROM field is forged, an SMTP error will be returned to the email client (e.g. "You do not own the email address you are trying to send from").
+
+Strong AUP and TOS agreements
+Most ISPs and webmail providers have either an Acceptable Use Policy (AUP) or a Terms of Service (TOS) agreement that discourages spammers from using their system and allows the spammer to be terminated quickly for violations.
+
+Legal measures
+From 2000 onwards, many countries enacted specific legislation to criminalize spamming, and appropriate legislation and enforcement can have a significant impact on spamming activity. Where legislation provides specific text that bulk emailers must include, this also makes "legitimate" bulk email easier to identify.
+Increasingly, anti-spam efforts have led to co-ordination between law enforcement, researchers, major consumer financial service companies and Internet service providers in monitoring and tracking email spam, identity theft and phishing activities and gathering evidence for criminal cases.
+Analysis of the sites being spamvertised by a given piece of spam can often be followed up with domain registrars with good results.
+
+New solutions and ongoing research
+Several approaches have been proposed to improve the email system.
+
+Cost-based systems
+Since spamming is facilitated by the fact that large volumes of email are very inexpensive to send, one proposed set of solutions would require that senders pay some cost in order to send email, making it prohibitively expensive for spammers. Anti-spam activist  Daniel Balsam attempts to make spamming less profitable by bringing lawsuits against spammers. One group of researchers have been looking at model that hones in on establishing a stark defense, this would increase the cost needed to make the spam effective. They are doing this through the lens of game methodology and strategy, by deploying the strict defensive measures at times of high volume, the spammer would have to spend more money. This would in turn decrease the amount of spam and possibly eliminate it in its entirety. In their experiments testing out this model it was shown to operate as intended, limiting spam overall.
+
+Machine-learning-based systems
+Artificial intelligence techniques can be deployed for filtering spam emails, such as artificial neural network algorithms and Bayesian filters. These methods use probabilistic methods to train the networks, such as examination of the concentration or frequency of words seen in spam versus legitimate email contents. By combining these filters, large language models, and natural language processing models, advanced systems can be developed to create new screens of defense against spam. This can be improved upon consistently and constantly, as this really serves as the foundation, counteracting the ever-growing nature of artificial intelligence on the other side of the spectrum that is being used for spam assault purposes. This can lead to artificial intelligence generation pop-ups to users that can serve as a warning however, which can reduce the amount that these emails are interacted with. The automated messages can also be fed into the anti-spam machine-learning systems that are in use or being researched, which can allow better results in the future.
+On a personal scale, one named PhiShield is in development. It is an AI system that can detect phishing attempts and provide information about the email to a user without opening it. It has been able to accurately distinguish phishing spam from ordinary mail in over hundreds of thousands of research cases.
+
+Text preprocessing
+Text preprocessing constitutes altering text to make patterns pop out more, which could be paired with anti-spam methods to make them more productive.
+
+Stemming
+This act simplifies words to their most basic form, or "stem". This allows words to be grouped together to make analysis easier. Sink, sunk, and sank for example would all be classified as sink.
+
+Tokenization
+Tokenization basically takes out unnecessary bits from an email for preprocessing, like punctuation, and turns needed substance such as words into tokens. This can help with summing up the message.
+
+Stopwords removal
+This, like tokenization, takes out unneeded parts, in this case stopwords or filler words. Things like prepositions or anything else that is not required to get the fundamental meaning of an email. The subtraction of these can make spam easier to detect as there is less to focus on.
+
+Normalization
+The normalization process makes text more conventional by way of righting capitalization, spelling, expanding contractions, and other ways to make it more uniform. This can be useful when encountering spam from non-native speakers of the language or from other dialects.
+
+Lemmatization
+Lexical analysis is used to find origin words similarly to stemming. This works along the lines of normalization to have one established tone and form of language. This helps with the grouping of words that are important in making a determination of spam.
+
+Keras
+Keras makes use of a Python user interface to operate with neural networks. A group of researchers have been working on creating a framework that works with long-short term memory and convolutional neural networks to counter spam methods through email. It would meld these two ideas together with the use of Keras to create one of the most functional live spam filters to date. In testing and researching, it was shown to massively exceed current methods in terms of success rate.
+
+Other techniques
+Channel email is a new proposal for sending email that attempts to distribute anti-spam activities by forcing verification (probably using bounce messages so back-scatter does not occur) when the first email is sent for new contacts.
+
+Research conferences
+Spam is the subject of several research conferences, including TREC.
+
+References
+External links
+AOL's postmaster page describing the Anti-Spam Technical Alliance (ASTA) Proposal
+Anti-Spam Research Group wiki, which was created by ASRG and is still alive
+Anti spam info & resource page of the US Federal Trade Commission (FTC)
+CAUBE.AU – Fight Spam in Australia, The Coalition Against Unsolicited Bulk Email, Australia
+Composing abuse reports – what to send, how to send it, where to send it – and what not to send or do.
+Computer Incident Advisory Committee's suggestions: E-Mail Spamming countermeasures: Detection and prevention of E-Mail spamming (Shawn Hernan, with James R. Cutler and David Harris)
+Historical Development of Spam Fighting in Relation to Threat of Computer-Aware Criminals, and Public Safety by Neil Schwartzman.
+Email Security Guide, How to identify and protect yourself from spam email
+Mail DDoS Attacks through Mail Non Delivery Messages and Backscatter
+Spam Laws United States, European Union, and other countries' laws and pending legislation regarding unsolicited commercial email.
+Secret to Stopping Spam An article about spam in Scientific American

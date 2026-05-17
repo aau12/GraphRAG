@@ -1,0 +1,486 @@
+# Event detection
+
+Activity recognition aims to recognize the actions and goals of one or more agents from a series of observations on the agents' actions and the environmental conditions. Since the 1980s, this research field has captured the attention of several computer science communities due to its strength in providing personalized support for many different applications and its connection to many different fields of study such as medicine, human-computer interaction, or sociology.
+Due to its multifaceted nature, different fields may refer to activity recognition as plan recognition, goal recognition, intent recognition, behavior recognition, location estimation and location-based services.
+
+Types
+Sensor-based, single-user activity recognition
+Sensor-based activity recognition integrates the emerging area of sensor networks with novel data mining and machine learning techniques to model a wide range of human activities. Mobile devices (e.g. smart phones) provide sufficient sensor data and calculation power to enable physical activity recognition to provide an estimation of the energy consumption during everyday life. Sensor-based activity recognition researchers believe that by empowering ubiquitous computers and sensors to monitor the behavior of agents (under consent), these computers will be better suited to act on our behalf. Visual sensors that incorporate color and depth information, such as the Kinect, allow more accurate automatic action recognition and fuse many emerging applications such as interactive education and smart environments. Multiple views of visual sensor enable the development of machine learning for automatic view invariant action recognition. More advanced sensors used in 3D motion capture systems allow highly accurate automatic recognition, in the expenses of more complicated hardware system setup.
+
+Levels of sensor-based activity recognition
+Sensor-based activity recognition is a challenging task due to the inherent noisy nature of the input. Thus, statistical modeling has been the main thrust in this direction in layers, where the recognition at several intermediate levels is conducted and connected. At the lowest level where the sensor data are collected, statistical learning concerns how to find the detailed locations of agents from the received signal data. At an intermediate level, statistical inference may be concerned about how to recognize individuals' activities from the inferred location sequences and environmental conditions at the lower levels. Furthermore, at the highest level, a major concern is to find out the overall goal or subgoals of an agent from the activity sequences through a mixture of logical and statistical reasoning.
+
+Sensor-based, multi-user activity recognition
+Recognizing activities for multiple users using on-body sensors first appeared in the work by ORL using active badge systems in the early 1990s. Other sensor technology such as acceleration sensors were used for identifying group activity patterns during office scenarios. Activities of Multiple Users in intelligent environments are addressed in Gu et al. In this work, they investigate the fundamental problem of recognizing activities for multiple users from sensor readings in a home environment, and propose a novel pattern mining approach to recognize both single-user and multi-user activities in a unified solution.
+
+Sensor-based group activity recognition
+Recognition of group activities is fundamentally different from single, or multi-user activity recognition in that the goal is to recognize the behavior of the group as an entity, rather than the activities of the individual members within it.  Group behavior is emergent in nature, meaning that the properties of the behavior of the group are fundamentally different than the properties of the behavior of the individuals within it, or any sum of that behavior.  The main challenges are in modeling the behavior of the individual group members, as well as the roles of the individual within the group dynamic and their relationship to emergent behavior of the group in parallel.  Challenges which must still be addressed include quantification of the behavior and roles of individuals who join the group, integration of explicit models for role description into inference algorithms, and scalability evaluations for very large groups and crowds.  Group activity recognition has applications for crowd management and response in emergency situations, as well as for social networking and Quantified Self applications.
+
+Approaches
+Activity recognition through logic and reasoning
+Logic-based approaches keep track of all logically consistent explanations of the observed actions. Thus, all possible and consistent plans or goals must be considered. Kautz provided a formal theory of plan recognition. He described plan recognition as a logical inference process of circumscription. All actions and plans are uniformly referred to as goals, and a recognizer's knowledge is represented by a set of first-order statements, called event hierarchy.  Event hierarchy is encoded in first-order logic, which defines abstraction, decomposition and functional relationships between types of events.
+Kautz's general framework for plan recognition has an exponential time complexity in worst case, measured in the size of the input hierarchy. Lesh and Etzioni went one step further and presented methods in scaling up goal recognition to scale up his work computationally. In contrast to Kautz's approach where the plan library is explicitly represented, Lesh and Etzioni's approach enables automatic plan-library construction from domain primitives. Furthermore, they introduced compact representations and efficient algorithms for goal recognition on large plan libraries.
+Inconsistent plans and goals are repeatedly pruned when new actions arrive. Besides, they also presented methods for adapting a goal recognizer to handle individual idiosyncratic behavior given a sample of an individual's recent behavior. Pollack et al. described a direct argumentation model that can know about the relative strength of several kinds of arguments for belief and intention description.
+A serious problem of logic-based approaches is their inability or inherent infeasibility to represent uncertainty. They offer no mechanism for preferring one consistent approach to another and are incapable of deciding whether one particular plan is more likely than another, as long as both of them can be consistent enough to explain the actions observed. There is also a lack of learning ability associated with logic based methods.
+Another approach to logic-based activity recognition is to use stream reasoning based on answer set programming, and has been applied to recognising activities for health-related applications,  which uses weak constraints to model a degree of ambiguity/uncertainty.
+
+Activity recognition through probabilistic reasoning
+Probability theory and statistical learning models are more recently applied in activity recognition to reason about actions, plans and goals under uncertainty. In the literature, there have been several approaches which explicitly represent uncertainty in reasoning about an agent's plans and goals.
+Using sensor data as input, Hodges and Pollack designed machine learning-based systems for identifying individuals as they perform routine daily activities such as making coffee. Intel Research (Seattle) Lab and University of Washington at Seattle have done some important works on using sensors to detect human plans. Some of these works infer user transportation modes from readings of radio-frequency identifiers (RFID) and global positioning systems (GPS).
+The use of temporal probabilistic models has been shown to perform well in activity recognition and generally outperform non-temporal models. Generative models such as the Hidden Markov Model (HMM) and the more generally formulated Dynamic Bayesian Networks (DBN) are popular choices in modelling activities from sensor data.
+Discriminative models such as Conditional Random Fields (CRF) are also commonly applied and also give good performance in activity recognition.
+Generative and discriminative models both have their pros and cons and the ideal choice depends on their area of application. A dataset together with implementations of a number of popular models (HMM, CRF) for activity recognition can be found here.
+Conventional temporal probabilistic models such as the hidden Markov model (HMM) and conditional random fields (CRF) model directly model the correlations between the activities and the observed sensor data. In recent years, increasing evidence has supported the use of hierarchical models which take into account the rich hierarchical structure that exists in human behavioral data. The core idea here is that the model does not directly correlate the activities with the sensor data, but instead breaks the activity into sub-activities (sometimes referred to as actions) and models the underlying correlations accordingly. An example could be the activity of preparing a stir fry, which can be broken down into the subactivities or actions of cutting vegetables, frying the vegetables in a pan and serving it on a plate. Examples of such a hierarchical model are Layered Hidden Markov Models (LHMMs) and the hierarchical hidden Markov model (HHMM), which have been shown to significantly outperform its non-hierarchical counterpart in activity recognition.
+
+Data mining based approach to activity recognition
+Different from traditional machine learning approaches, an approach based on data mining has been recently proposed. In the work of Gu et al., the problem of activity recognition is formulated as a pattern-based classification problem. They proposed a data mining approach based on discriminative patterns which describe significant changes between any two activity classes of data to recognize sequential, interleaved and concurrent activities in a unified solution. Gilbert et al. use 2D corners in both space and time. These are grouped spatially and temporally using a hierarchical process, with an increasing search area. At each stage of the hierarchy, the most distinctive and descriptive features are learned efficiently through data mining (Apriori rule).
+
+GPS-based activity recognition
+Location-based activity recognition can also rely on GPS data to recognize activities.
+
+Sensor usage
+Vision-based activity recognition
+It is a very important and challenging problem to track and understand the behavior of agents through videos taken by various cameras. The primary technique employed is Computer Vision. Vision-based activity recognition has found many applications such as human-computer interaction, user interface design, robot learning, and surveillance, among others.
+Scientific conferences where vision based activity recognition work often appears are ICCV and CVPR.
+In vision-based activity recognition, a great deal of work has been done. Researchers have attempted a number of methods such as optical flow, Kalman filtering, Hidden Markov models, etc., under different modalities such as single camera, stereo, and infrared. In addition, researchers have considered multiple aspects on this topic, including single pedestrian tracking, group tracking, and detecting dropped objects.
+Recently some researchers have used RGBD cameras like Microsoft Kinect to detect human activities. Depth cameras add extra dimension i.e. depth which normal 2d camera fails to provide. Sensory information from these depth cameras have been used to generate real-time skeleton model of humans with different body positions. This skeleton information provides meaningful information that researchers have used to model human activities which are trained and later used to recognize unknown activities.
+With the recent emergency of deep learning, RGB video based activity recognition has seen rapid development. It uses videos captured by RGB cameras as input and perform several tasks, including: video classification, detection of activity start and end in videos, and spatial-temporal localization of activity and the people performing the activity. Pose estimation methods allow extracting more representative skeletal features for action recognition. That said, it has been discovered that deep learning based action recognition may suffer from adversarial attacks, where an attacker alter the input insignificantly to fool an action recognition system.
+Despite remarkable progress of vision-based activity recognition, its usage for most actual visual surveillance applications remains a distant aspiration. Conversely, the human brain seems to have perfected the ability to recognize human actions. This capability relies not only on acquired knowledge, but also on the aptitude of extracting information relevant to a given context and logical reasoning. Based on this observation, it has been proposed to enhance vision-based activity recognition systems by integrating commonsense reasoning and, contextual and commonsense knowledge.
+Hierarchical Human Activity (HAR) Recognition
+Hierarchical human activity recognition is a technique within computer vision and machine learning. It aims to identify and comprehend human actions or behaviors from visual data. This method entails structuring activities hierarchically, creating a framework that represents connections and interdependencies among various actions. HAR techniques can be used to understand data correlations and model fundamentals to improve models, to balance accuracy and privacy concerns in sensitive application areas, and to identify and manage trivial labels that have no relevance in specific use cases.
+
+Levels of vision-based activity recognition
+In vision-based activity recognition, the computational process is often divided into four steps, namely human detection, human tracking, human activity recognition and then a high-level activity evaluation.
+
+Fine-grained action localization
+In computer vision-based activity recognition, fine-grained action localization typically provides per-image segmentation masks delineating the human object and its action category (e.g., Segment-Tube). Techniques such as dynamic Markov Networks, CNN and LSTM are often employed to exploit the semantic correlations between consecutive video frames. Geometric fine-grained features such as objective bounding boxes and human poses facilitate activity recognition with graph neural network.
+
+Automatic gait recognition
+One way to identify specific people is by how they walk. Gait-recognition software can be used to record a person's gait or gait feature profile in a database for the purpose of recognizing that person later, even if they are wearing a disguise.
+
+Wi-Fi-based activity recognition
+When activity recognition is performed indoors and in cities using the widely available Wi-Fi signals and 802.11 access points, there is much noise and uncertainty. These uncertainties can be modeled using a dynamic Bayesian network model. In a multiple goal model that can reason about user's interleaving goals, a deterministic state transition model is applied. Another possible method models the concurrent and interleaving activities in a probabilistic approach. A user action discovery model could segment Wi-Fi signals to produce possible actions.
+
+Basic models of Wi-Fi recognition
+One of the primary thought of Wi-Fi activity recognition is that when the signal goes through the human body during transmission; which causes reflection, diffraction, and scattering. Researchers can get information from these signals to analyze the activity of the human body.
+
+Static transmission model
+As shown in, when wireless signals are transmitted indoors, obstacles such as walls, the ground, and the human body cause various effects such as reflection, scattering, diffraction, and diffraction. Therefore, receiving end receives multiple signals from different paths at the same time, because surfaces reflect the signal during the transmission, which is known as multipath effect.
+The static model is based on these two kinds of signals: the direct signal and the reflected signal. Because there is no obstacle in the direct path, direct signal transmission can be modeled by Friis transmission equation:
+
+  
+    
+      
+        
+          P
+          
+            r
+          
+        
+        =
+        
+          
+            
+              
+                P
+                
+                  t
+                
+              
+              
+                G
+                
+                  t
+                
+              
+              
+                G
+                
+                  r
+                
+              
+              
+                λ
+                
+                  2
+                
+              
+            
+            
+              (
+              4
+              π
+              
+                )
+                
+                  2
+                
+              
+              
+                d
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle P_{r}={\frac {P_{t}G_{t}G_{r}\lambda ^{2}}{(4\pi )^{2}d^{2}}}}
+  
+
+  
+    
+      
+        
+          P
+          
+            t
+          
+        
+      
+    
+    {\displaystyle P_{t}}
+  
+ is the power fed into the transmitting antenna input terminals;
+
+  
+    
+      
+        
+          P
+          
+            r
+          
+        
+      
+    
+    {\displaystyle P_{r}}
+  
+ is the power available at receiving antenna output terminals;
+
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ is the distance between antennas;
+
+  
+    
+      
+        
+          G
+          
+            t
+          
+        
+      
+    
+    {\displaystyle G_{t}}
+  
+ is transmitting antenna gain;
+
+  
+    
+      
+        
+          G
+          
+            r
+          
+        
+      
+    
+    {\displaystyle G_{r}}
+  
+ is receiving antenna gain;
+
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ is the wavelength of the radio frequency
+If we consider the reflected signal, the new equation is:
+
+  
+    
+      
+        
+          P
+          
+            r
+          
+        
+        =
+        
+          
+            
+              
+                P
+                
+                  t
+                
+              
+              
+                G
+                
+                  t
+                
+              
+              
+                G
+                
+                  r
+                
+              
+              
+                λ
+                
+                  2
+                
+              
+            
+            
+              (
+              4
+              π
+              
+                )
+                
+                  2
+                
+              
+              (
+              d
+              +
+              4
+              h
+              
+                )
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle P_{r}={\frac {P_{t}G_{t}G_{r}\lambda ^{2}}{(4\pi )^{2}(d+4h)^{2}}}}
+  
+
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ is the distance between reflection points and direct path.
+When human shows up, we have a new transmission path. Therefore, the final equation is:
+
+  
+    
+      
+        
+          P
+          
+            r
+          
+        
+        =
+        
+          
+            
+              
+                P
+                
+                  t
+                
+              
+              
+                G
+                
+                  t
+                
+              
+              
+                G
+                
+                  r
+                
+              
+              
+                λ
+                
+                  2
+                
+              
+            
+            
+              (
+              4
+              π
+              
+                )
+                
+                  2
+                
+              
+              (
+              d
+              +
+              4
+              h
+              +
+              Δ
+              
+                )
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle P_{r}={\frac {P_{t}G_{t}G_{r}\lambda ^{2}}{(4\pi )^{2}(d+4h+\Delta )^{2}}}}
+  
+
+  
+    
+      
+        Δ
+      
+    
+    {\displaystyle \Delta }
+  
+ is the approximate difference of the path caused by human body.
+
+Dynamic transmission model
+In this model, we consider the human motion, which causes the signal transmission path to change continuously. We can use Doppler Shift to describe this effect, which is related to the motion speed.
+
+  
+    
+      
+        Δ
+        f
+        =
+        
+          
+            
+              2
+              v
+              cos
+              ⁡
+              θ
+            
+            c
+          
+        
+        f
+      
+    
+    {\displaystyle \Delta f={\frac {2v\cos \theta }{c}}f}
+  
+
+By calculating the Doppler Shift of the receiving signal, we can figure out the pattern of the movement, thereby further identifying human activity. For example, in, the Doppler shift is used as a fingerprint to achieve high-precision identification for nine different movement patterns.
+
+Fresnel zone
+The Fresnel zone was initially used to study the interference and diffraction of the light, which is later used to construct the wireless signal transmission model. Fresnel zone is a series of elliptical intervals whose foci are the positions of the sender and receiver.
+When a person is moving across different Fresnel zones, the signal path formed by the reflection of the human body changes, and if people move vertically through Fresnel zones, the change of signal will be periodic. In a pair of papers, Wang et.al. applied the Fresnel model to the activity recognition task and got a more accurate result.
+
+Modeling of the human body
+In some tasks, we should consider modeling the human body accurately to achieve better results. For example, described the human body as concentric cylinders for breath detection. The outside of the cylinder denotes the rib cage when people inhale, and the inside denotes that when people exhale. So the difference between the radius of that two cylinders represents the moving distance during breathing.  
+The change of the signal phases can be expressed in the following equation:
+
+  
+    
+      
+        θ
+        =
+        2
+        π
+        
+          
+            
+              2
+              
+              Δ
+              d
+            
+            λ
+          
+        
+      
+    
+    {\displaystyle \theta =2\pi {\frac {2\,\Delta d}{\lambda }}}
+  
+
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+ is the change of the signal phases;
+
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ is the wavelength of the radio frequency;
+
+  
+    
+      
+        Δ
+        d
+      
+    
+    {\displaystyle \Delta d}
+  
+ is moving distance of rib cage;
+
+Datasets
+There are some popular datasets that are used for benchmarking activity recognition or action recognition algorithms.
+
+UCF-101: It consists of 101 human action classes, over 13k clips and 27 hours of video data. Action classes include applying makeup, playing dhol, cricket shot, shaving beard, etc.
+HMDB51: This is a collection of realistic videos from various sources, including movies and web videos. The dataset is composed of 6,849 video clips from 51 action categories (such as “jump”, “kiss” and “laugh”), with each category containing at least 101 clips.
+Kinetics: This is a significantly larger dataset than the previous ones. It contains 400 human action classes, with at least 400 video clips for each action. Each clip lasts around 10s and is taken from a different YouTube video. This dataset was created by DeepMind.
+
+Applications
+By automatically monitoring human activities, home-based rehabilitation can be provided for people suffering from traumatic brain injuries. One can find applications ranging from security-related applications and logistics support to location-based services. Activity recognition systems have been developed for wildlife observation and energy conservation in buildings.
+
+See also
+AI effect
+Applications of artificial intelligence
+Conditional random field
+Gesture recognition
+Hidden Markov model
+Motion analysis
+Naive Bayes classifier
+Support vector machines
+Object co-segmentation
+Outline of artificial intelligence
+Video content analysis
+
+
+== References ==

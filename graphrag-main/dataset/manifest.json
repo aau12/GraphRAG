@@ -1,0 +1,491 @@
+{
+  "total_articles": 97,
+  "total_tokens": 674216,
+  "articles": [
+    {
+      "title": "Artificial intelligence",
+      "file": "dataset\\Artificial_intelligence.txt",
+      "tokens": 16226
+    },
+    {
+      "title": "Machine learning",
+      "file": "dataset\\Machine_learning.txt",
+      "tokens": 10563
+    },
+    {
+      "title": "Deep learning",
+      "file": "dataset\\Deep_learning.txt",
+      "tokens": 10781
+    },
+    {
+      "title": "Neural network",
+      "file": "dataset\\Neural_network.txt",
+      "tokens": 960
+    },
+    {
+      "title": "Natural language processing",
+      "file": "dataset\\Natural_language_processing.txt",
+      "tokens": 6273
+    },
+    {
+      "title": "Transformer (machine learning model)",
+      "file": "dataset\\Transformer_(machine_learning_model).txt",
+      "tokens": 21286
+    },
+    {
+      "title": "GPT-4",
+      "file": "dataset\\GPT-4.txt",
+      "tokens": 3136
+    },
+    {
+      "title": "BERT (language model)",
+      "file": "dataset\\BERT_(language_model).txt",
+      "tokens": 3621
+    },
+    {
+      "title": "Large language model",
+      "file": "dataset\\Large_language_model.txt",
+      "tokens": 11161
+    },
+    {
+      "title": "Reinforcement learning",
+      "file": "dataset\\Reinforcement_learning.txt",
+      "tokens": 10129
+    },
+    {
+      "title": "Convolutional neural network",
+      "file": "dataset\\Convolutional_neural_network.txt",
+      "tokens": 12964
+    },
+    {
+      "title": "Recurrent neural network",
+      "file": "dataset\\Recurrent_neural_network.txt",
+      "tokens": 10440
+    },
+    {
+      "title": "Generative adversarial network",
+      "file": "dataset\\Generative_adversarial_network.txt",
+      "tokens": 22800
+    },
+    {
+      "title": "Alan Turing",
+      "file": "dataset\\Alan_Turing.txt",
+      "tokens": 12193
+    },
+    {
+      "title": "Geoffrey Hinton",
+      "file": "dataset\\Geoffrey_Hinton.txt",
+      "tokens": 4193
+    },
+    {
+      "title": "Yann LeCun",
+      "file": "dataset\\Yann_LeCun.txt",
+      "tokens": 1727
+    },
+    {
+      "title": "Yoshua Bengio",
+      "file": "dataset\\Yoshua_Bengio.txt",
+      "tokens": 2140
+    },
+    {
+      "title": "Andrew Ng",
+      "file": "dataset\\Andrew_Ng.txt",
+      "tokens": 3209
+    },
+    {
+      "title": "Andrej Karpathy",
+      "file": "dataset\\Andrej_Karpathy.txt",
+      "tokens": 684
+    },
+    {
+      "title": "Demis Hassabis",
+      "file": "dataset\\Demis_Hassabis.txt",
+      "tokens": 2847
+    },
+    {
+      "title": "OpenAI",
+      "file": "dataset\\OpenAI.txt",
+      "tokens": 10780
+    },
+    {
+      "title": "DeepMind",
+      "file": "dataset\\DeepMind.txt",
+      "tokens": 7846
+    },
+    {
+      "title": "Google Brain",
+      "file": "dataset\\Google_Brain.txt",
+      "tokens": 3070
+    },
+    {
+      "title": "Meta AI",
+      "file": "dataset\\Meta_AI.txt",
+      "tokens": 720
+    },
+    {
+      "title": "Anthropic",
+      "file": "dataset\\Anthropic.txt",
+      "tokens": 3536
+    },
+    {
+      "title": "History of artificial intelligence",
+      "file": "dataset\\History_of_artificial_intelligence.txt",
+      "tokens": 21594
+    },
+    {
+      "title": "Perceptron",
+      "file": "dataset\\Perceptron.txt",
+      "tokens": 8345
+    },
+    {
+      "title": "Backpropagation",
+      "file": "dataset\\Backpropagation.txt",
+      "tokens": 15923
+    },
+    {
+      "title": "Attention (machine learning)",
+      "file": "dataset\\Attention_(machine_learning).txt",
+      "tokens": 4873
+    },
+    {
+      "title": "Word2vec",
+      "file": "dataset\\Word2vec.txt",
+      "tokens": 5785
+    },
+    {
+      "title": "ImageNet",
+      "file": "dataset\\ImageNet.txt",
+      "tokens": 3984
+    },
+    {
+      "title": "AlphaGo",
+      "file": "dataset\\AlphaGo.txt",
+      "tokens": 5940
+    },
+    {
+      "title": "AlphaFold",
+      "file": "dataset\\AlphaFold.txt",
+      "tokens": 5261
+    },
+    {
+      "title": "ChatGPT",
+      "file": "dataset\\ChatGPT.txt",
+      "tokens": 6976
+    },
+    {
+      "title": "Stable Diffusion",
+      "file": "dataset\\Stable_Diffusion.txt",
+      "tokens": 5141
+    },
+    {
+      "title": "DALL-E",
+      "file": "dataset\\DALL-E.txt",
+      "tokens": 3038
+    },
+    {
+      "title": "Turing test",
+      "file": "dataset\\Turing_test.txt",
+      "tokens": 10655
+    },
+    {
+      "title": "Expert system",
+      "file": "dataset\\Expert_system.txt",
+      "tokens": 4975
+    },
+    {
+      "title": "Knowledge graph",
+      "file": "dataset\\Knowledge_graph.txt",
+      "tokens": 1863
+    },
+    {
+      "title": "Graph neural network",
+      "file": "dataset\\Graph_neural_network.txt",
+      "tokens": 7750
+    },
+    {
+      "title": "Support vector machine",
+      "file": "dataset\\Support_vector_machine.txt",
+      "tokens": 18269
+    },
+    {
+      "title": "Random forest",
+      "file": "dataset\\Random_forest.txt",
+      "tokens": 12003
+    },
+    {
+      "title": "Gradient descent",
+      "file": "dataset\\Gradient_descent.txt",
+      "tokens": 12318
+    },
+    {
+      "title": "Overfitting",
+      "file": "dataset\\Overfitting.txt",
+      "tokens": 3109
+    },
+    {
+      "title": "Transfer learning",
+      "file": "dataset\\Transfer_learning.txt",
+      "tokens": 1670
+    },
+    {
+      "title": "Few-shot learning",
+      "file": "dataset\\Few-shot_learning.txt",
+      "tokens": 32
+    },
+    {
+      "title": "Prompt engineering",
+      "file": "dataset\\Prompt_engineering.txt",
+      "tokens": 3564
+    },
+    {
+      "title": "Retrieval-augmented generation",
+      "file": "dataset\\Retrieval-augmented_generation.txt",
+      "tokens": 2165
+    },
+    {
+      "title": "Autonomous vehicle",
+      "file": "dataset\\Autonomous_vehicle.txt",
+      "tokens": 9827
+    },
+    {
+      "title": "Computer vision",
+      "file": "dataset\\Computer_vision.txt",
+      "tokens": 7457
+    },
+    {
+      "title": "Speech recognition",
+      "file": "dataset\\Speech_recognition.txt",
+      "tokens": 8522
+    },
+    {
+      "title": "Sentiment analysis",
+      "file": "dataset\\Sentiment_analysis.txt",
+      "tokens": 5248
+    },
+    {
+      "title": "Named-entity recognition",
+      "file": "dataset\\Named-entity_recognition.txt",
+      "tokens": 2770
+    },
+    {
+      "title": "Question answering",
+      "file": "dataset\\Question_answering.txt",
+      "tokens": 3061
+    },
+    {
+      "title": "Semantic search",
+      "file": "dataset\\Semantic_search.txt",
+      "tokens": 386
+    },
+    {
+      "title": "TensorFlow",
+      "file": "dataset\\TensorFlow.txt",
+      "tokens": 2568
+    },
+    {
+      "title": "PyTorch",
+      "file": "dataset\\PyTorch.txt",
+      "tokens": 914
+    },
+    {
+      "title": "Hugging Face",
+      "file": "dataset\\Hugging_Face.txt",
+      "tokens": 561
+    },
+    {
+      "title": "NVIDIA",
+      "file": "dataset\\NVIDIA.txt",
+      "tokens": 12359
+    },
+    {
+      "title": "GPU",
+      "file": "dataset\\GPU.txt",
+      "tokens": 5735
+    },
+    {
+      "title": "TPU",
+      "file": "dataset\\TPU.txt",
+      "tokens": 149
+    },
+    {
+      "title": "Federated learning",
+      "file": "dataset\\Federated_learning.txt",
+      "tokens": 6194
+    },
+    {
+      "title": "Differential privacy",
+      "file": "dataset\\Differential_privacy.txt",
+      "tokens": 8002
+    },
+    {
+      "title": "AI safety",
+      "file": "dataset\\AI_safety.txt",
+      "tokens": 5551
+    },
+    {
+      "title": "Hallucination (artificial intelligence)",
+      "file": "dataset\\Hallucination_(artificial_intelligence).txt",
+      "tokens": 7069
+    },
+    {
+      "title": "Bias in artificial intelligence",
+      "file": "dataset\\Bias_in_artificial_intelligence.txt",
+      "tokens": 13078
+    },
+    {
+      "title": "Explainable artificial intelligence",
+      "file": "dataset\\Explainable_artificial_intelligence.txt",
+      "tokens": 5612
+    },
+    {
+      "title": "Multimodal learning",
+      "file": "dataset\\Multimodal_learning.txt",
+      "tokens": 817
+    },
+    {
+      "title": "Foundation model",
+      "file": "dataset\\Foundation_model.txt",
+      "tokens": 5180
+    },
+    {
+      "title": "Mixture of experts",
+      "file": "dataset\\Mixture_of_experts.txt",
+      "tokens": 9346
+    },
+    {
+      "title": "Embedding",
+      "file": "dataset\\Embedding.txt",
+      "tokens": 5587
+    },
+    {
+      "title": "Vector database",
+      "file": "dataset\\Vector_database.txt",
+      "tokens": 686
+    },
+    {
+      "title": "Semantic similarity",
+      "file": "dataset\\Semantic_similarity.txt",
+      "tokens": 3508
+    },
+    {
+      "title": "Cosine similarity",
+      "file": "dataset\\Cosine_similarity.txt",
+      "tokens": 6085
+    },
+    {
+      "title": "K-nearest neighbors algorithm",
+      "file": "dataset\\K-nearest_neighbors_algorithm.txt",
+      "tokens": 6735
+    },
+    {
+      "title": "Principal component analysis",
+      "file": "dataset\\Principal_component_analysis.txt",
+      "tokens": 21720
+    },
+    {
+      "title": "Autoencoder",
+      "file": "dataset\\Autoencoder.txt",
+      "tokens": 9999
+    },
+    {
+      "title": "Variational autoencoder",
+      "file": "dataset\\Variational_autoencoder.txt",
+      "tokens": 9312
+    },
+    {
+      "title": "Diffusion model",
+      "file": "dataset\\Diffusion_model.txt",
+      "tokens": 34912
+    },
+    {
+      "title": "Reinforcement learning from human feedback",
+      "file": "dataset\\Reinforcement_learning_from_human_feedback.txt",
+      "tokens": 12670
+    },
+    {
+      "title": "Constitutional AI",
+      "file": "dataset\\Constitutional_AI.txt",
+      "tokens": 4198
+    },
+    {
+      "title": "Claude (language model)",
+      "file": "dataset\\Claude_(language_model).txt",
+      "tokens": 4198
+    },
+    {
+      "title": "Gemini (chatbot)",
+      "file": "dataset\\Gemini_(chatbot).txt",
+      "tokens": 5357
+    },
+    {
+      "title": "LLaMA",
+      "file": "dataset\\LLaMA.txt",
+      "tokens": 4346
+    },
+    {
+      "title": "Mistral AI",
+      "file": "dataset\\Mistral_AI.txt",
+      "tokens": 1227
+    },
+    {
+      "title": "Cohere",
+      "file": "dataset\\Cohere.txt",
+      "tokens": 1987
+    },
+    {
+      "title": "AI winter",
+      "file": "dataset\\AI_winter.txt",
+      "tokens": 6114
+    },
+    {
+      "title": "Dartmouth workshop",
+      "file": "dataset\\Dartmouth_workshop.txt",
+      "tokens": 1471
+    },
+    {
+      "title": "Marvin Minsky",
+      "file": "dataset\\Marvin_Minsky.txt",
+      "tokens": 2440
+    },
+    {
+      "title": "John McCarthy",
+      "file": "dataset\\John_McCarthy.txt",
+      "tokens": 827
+    },
+    {
+      "title": "Claude Shannon",
+      "file": "dataset\\Claude_Shannon.txt",
+      "tokens": 6865
+    },
+    {
+      "title": "Norbert Wiener",
+      "file": "dataset\\Norbert_Wiener.txt",
+      "tokens": 6717
+    },
+    {
+      "title": "Cybernetics",
+      "file": "dataset\\Cybernetics.txt",
+      "tokens": 4233
+    },
+    {
+      "title": "Robotics",
+      "file": "dataset\\Robotics.txt",
+      "tokens": 6310
+    },
+    {
+      "title": "Boston Dynamics",
+      "file": "dataset\\Boston_Dynamics.txt",
+      "tokens": 3064
+    },
+    {
+      "title": "Waymo",
+      "file": "dataset\\Waymo.txt",
+      "tokens": 7204
+    },
+    {
+      "title": "Tesla Autopilot",
+      "file": "dataset\\Tesla_Autopilot.txt",
+      "tokens": 17520
+    }
+  ]
+}

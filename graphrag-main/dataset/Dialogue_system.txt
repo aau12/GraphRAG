@@ -1,0 +1,88 @@
+# Dialogue system
+
+A dialogue system, or conversational agent (CA), is a computer system intended to converse with a human. Dialogue systems employ one or more of text, speech, graphics, haptics, gestures, and other modes for communication on both the input and output channel.
+The elements of a dialogue system are not defined because this idea is under research; however, they are different from chatbots. The typical GUI wizard engages in a sort of dialogue, but it includes very few of the common dialogue system components, and the dialogue state is trivial.
+
+Background
+After dialogue systems based only on written text processing starting from the early Sixties, the first speaking dialogue system was issued by the DARPA Project in the US in 1977. After the end of this 5-year project, some European projects issued the first dialogue system able to speak many languages (also French, German and Italian). Those first systems were used in the telecom industry to provide phone various services in specific domains, e.g. automated agenda and train tables service.
+
+Components
+What sets of components are included in a dialogue system, and how those components divide up responsibilities differs from system to system. Principal to any dialogue system is the dialogue manager, which is a component that manages the state of the dialogue, and dialogue strategy. A typical activity cycle in a dialogue system contains the following phases:
+
+The user speaks, and the input is converted to plain text by the system's input recogniser/decoder, which may include:
+automatic speech recogniser (ASR)
+gesture recogniser
+handwriting recogniser
+The text is analysed by a natural language understanding (NLU) unit, which may include:
+Proper Name identification
+part-of-speech tagging
+Syntactic/semantic parser
+The semantic information is analysed by the dialogue manager, which keeps the history and state of the dialogue and manages the general flow of the conversation.
+Usually, the dialogue manager contacts one or more  task managers, that have knowledge of the specific task domain.
+The dialogue manager produces output using an output generator, which may include:
+natural language generator
+gesture generator
+layout manager
+Finally, the output is rendered using an output renderer, which may include:
+text-to-speech engine (TTS)
+talking head
+robot or avatar
+Dialogue systems that are based on a text-only interface (e.g. text-based chat) contain only stages 2–5.
+
+Types of systems
+Dialogue systems fall into the following categories, which are listed here along a few dimensions. Many of the categories overlap and the distinctions may not be well established.
+
+by modality
+text-based
+spoken dialogue system
+graphical user interface
+multi-modal
+by device
+telephone-based systems
+PDA systems
+in-car systems
+robot systems
+desktop/laptop systems
+native
+in-browser systems
+in-virtual machine
+in-virtual environment
+robots
+by style
+command-based
+menu-driven
+natural language
+speech graffiti
+by initiative
+system initiative
+user initiative
+mixed initiative
+
+Performance
+Some authors measure the dialogue system's performance in terms of the percentage of sentences completely right, by comparing the model of sentences (this measure is called Concept Sentence Accuracy or Sentence Understanding). Dialogue systems can sometimes give inconsistent responses depending on how users phrase their questions.
+
+Applications
+Dialogue systems can support a broad range of applications in business enterprises, education, government, healthcare, and entertainment. For example:
+
+Responding to customers' questions about products and services via a company's website or intranet portal
+Customer service agent knowledge base:  Allows agents to type in a customer's question and guide them with a response
+Guided selling: Facilitating transactions by providing answers and guidance in the sales process, particularly for complex products being sold to novice customers
+Help desk: Responding to internal employee questions, e.g., responding to HR questions
+Website navigation: Guiding customers to relevant portions of complex websites—a Website concierge
+Technical support: Responding to technical problems, such as diagnosing a problem with a product or device
+Personalized service: Conversational agents can leverage internal and external databases to personalise interactions, such as answering questions about account balances, providing portfolio information, delivering frequent flier or membership information, for example
+Training or education: They can provide problem-solving advice while the user learns
+Simple dialogue systems are widely used to decrease the human workload in call centers. In this and other industrial telephony applications, the functionality provided by dialogue systems is known as interactive voice response or IVR.
+Support scientist in data manipulation and analysis tasks, for example in genomics.
+In some cases, conversational agents can interact with users using artificial characters. These agents are then referred to as embodied agents.
+In the 2020s, dialogue systems have increasingly been built on top of large language models (LLMs), which allow them to handle open-domain conversation more flexibly than earlier rule-based or statistical approaches. Modern implementations often integrate both voice and text interfaces, providing users with multi-modal interaction through conversational agents. Such systems are also being embedded into applications with user-friendly interfaces for customer service, education, and personal assistance.
+
+Toolkits and architectures
+A survey of current frameworks, languages and technologies for defining dialogue systems.
+
+See also
+Call avoidance
+
+References
+Further reading
+Will, Thomas (2007). Creating a Dynamic Speech Dialogue. VDM Verlag Dr. Müller. ISBN 978-3-8364-4990-8.

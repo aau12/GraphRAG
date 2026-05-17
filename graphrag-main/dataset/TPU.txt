@@ -1,0 +1,17 @@
+# TPU
+
+TPU or tpu may refer to:
+
+Science and technology
+Tensor Processing Unit, a custom ASIC built by Google, tailored for their TensorFlow platform
+DEC Text Processing Utility, a language developed by Digital Equipment Corporation for developing text editors
+Thermoplastic polyurethane, a class of polyurethane plastics
+Transcranial pulsed ultrasound, a brain-stimulation technique
+
+Other uses
+TACA Peru (ICAO code), an airline
+Tampuan language (ISO 639-3 language code)
+Tikapur Airport (IATA code), Nepal
+Tokyo Polytechnic University, Japan
+Tomsk Polytechnic University, Tomsk, Russia
+Troop Program Unit, an organizational component of the United States Army Reserve

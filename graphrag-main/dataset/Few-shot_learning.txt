@@ -1,0 +1,6 @@
+# Few-shot learning
+
+Few-shot learning and one-shot learning may refer to:
+
+Few-shot learning, a form of prompt engineering in generative AI
+One-shot learning (computer vision)
